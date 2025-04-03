@@ -29,4 +29,3 @@ sidebar_label: '微服务架构理念'
   - DNS Lookup
   - k8s注入环境变量
 
-![注册中心抽象模型](/static/img/docs/web/注册中心抽象模型.png)

@@ -13,11 +13,11 @@ const config: Config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   // baseUrl: '/',
-  baseUrl: '/blog/',
+  baseUrl: '/blog',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'terrencegee', // Usually your GitHub org/user name.
+  organizationName: 'plain', // Usually your GitHub org/user name.
   projectName: 'blog', // Usually your repo name.
   deploymentBranch: 'deployment',
   trailingSlash: true,
@@ -49,6 +49,9 @@ const config: Config = {
           editUrl:
             'https://github.com/TerrenceGee/blog/tree/source/',
         },
+        pages: {
+
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -71,9 +74,21 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'language',
+          sidebarId: 'algorithm',
           position: 'left',
-          label: '编程语言',
+          label: '算法',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'java',
+          label: 'JAVA',
+          position: 'left',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'framework',
+          position: 'left',
+          label: '框架',
         },
         {
           type: 'docSidebar',
@@ -87,6 +102,12 @@ const config: Config = {
           position: 'left',
           label: '运维',
         },
+        {
+          type: 'docSidebar',
+          sidebarId: 'tools',
+          position: 'left',
+          label: '工具',
+        },
         // {
         //   type: 'docSidebar',
         //   sidebarId: 'tutorialSidebar',
@@ -97,6 +118,11 @@ const config: Config = {
         {
           to: '/blog/blog',
           label: 'Blog',
+          position: 'right',
+        },
+        {
+          to: '/blog/resume',
+          label: 'Resume',
           position: 'right',
         },
         {
