@@ -74,6 +74,18 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
+          sidebarId: 'middleware',
+          position: 'left',
+          label: '中间件',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'design',
+          position: 'left',
+          label: '设计',
+        },
+        {
+          type: 'docSidebar',
           sidebarId: 'algorithm',
           position: 'left',
           label: '算法',
@@ -84,6 +96,7 @@ const config: Config = {
           label: 'JAVA',
           position: 'left',
         },
+        { type: 'docSidebar', sidebarId: 'rust', label: 'Rust', position: 'left', },
         {
           type: 'docSidebar',
           sidebarId: 'framework',
