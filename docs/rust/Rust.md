@@ -210,6 +210,19 @@ structrue 概念类似于面向对象语言中的 object，使用关键字 struc
 - 只能在结构体、枚举、trait 内部定义
 - 第一个参数只能是 self，代表当前变量自身
 
+#### automatic referencing and dereferencing
+
+rust 会自动引用和解引用，当你调用 `object.something()`，会自动添加`&,&mut,*`，所以方法实际上可能是
+`p1.distance(&p2);`
+`(&p1).distance(&p2);`
+
+#### other associated function
+
+associated function 包含两种，一种是 method（第一个参数是 self，代表当前实例），使用 `.`符号来进行访问；一种是实例方法，类似于 java 中的静态方法，一般用来创建一个实例，如`String::from("")`，这种方法使用`::`符号来访问，这个符号同时也用于 模块命名空间
+
+#### enums、Option\<T\>、与 Match
+
+match 语法用来匹配 enums 时，必须顾及到所有的情况，如果不想列举，可以使用'_'来代表所有没有顾及到的值。
 
 ### Rust编译
 
