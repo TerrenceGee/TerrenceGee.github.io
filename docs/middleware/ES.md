@@ -40,3 +40,51 @@ Elasticsearch 目录结构：
 GET _cat/health?v
 GET _cluster/health
 ```
+
+> 生产环境要求一个服务器只能启动一个节点
+
+## 核心概念
+
+分布式的搜索、存储和分析引擎。
+用途：搜索引擎、垂直搜索、BI（商业智能）、ELKB
+
+节点：每一个启动的 Java 进程
+角色：
+
+- master：候选节点
+- data：数据节点
+- data_content：数据内容节点
+- data_hot：热节点
+- data_warm：索引不再 定期更新
+- data_cold：冷节点， 只读索引
+- Ingest：预处理节点，作用类似于 Logstash 中的 FIlter
+- ml：机器学习节点
+- remote_cluster_client
+- transform
+- voting_only：仅投票节点
+
+分片
+
+- 每个数据拥有 N 个分片，第个分片拥有 M 个副本。7.0之前默认5个分片，7.0之后默认一个主分片。副本可以在索引创建之后修改数量，而主分片的数量一旦确定，就不能修改
+- 每个节点是一个 ES 实例，每个分片是一个 Lucene 实例，有完整的创建索引和处理请求的能力
+- ES 会自动在 nodes 上做分片均衡
+- 一个 doc 不可能同时存在于多个主分片中，但是可以在每个主分片的不同副本中
+- 每个主分片和其副本分片不能同时存在于同一个节点上，所以最低的可用配置是两个节点互为主备。
+
+集群
+
+- 原生分布式
+- 一个节点≠一台服务器
+
+集群的健康值：
+
+- Green
+- Yallow
+- Red：至少一个 Replica 不可用，但是所有 Primary 均为 active，
+- `_cat/health?v`
+- `_cluster/health`
+
+索引和文档
+
+索引-Index，类似于关系型数据库中的表
+文档-Document，类似于关系型数据库的数据行
