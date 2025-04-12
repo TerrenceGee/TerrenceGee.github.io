@@ -97,6 +97,7 @@ const config: Config = {
           position: 'left',
         },
         { type: 'docSidebar', sidebarId: 'rust', label: 'Rust', position: 'left', },
+        { type: 'docSidebar', sidebarId: 'workout', label: 'workout', position: 'right', },
         {
           type: 'docSidebar',
           sidebarId: 'framework',
