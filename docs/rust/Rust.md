@@ -224,6 +224,18 @@ associated function 包含两种，一种是 method（第一个参数是 self，
 
 match 语法用来匹配 enums 时，必须顾及到所有的情况，如果不想列举，可以使用'_'来代表所有没有顾及到的值。
 
+### common collections
+
+> Rust 中的 build-in array and tuple中的数据是存储在栈上的，而 collections 中的数据是存储在堆上的，所以不需要在编译期确定，可以增长。
+
+#### vector
+
+#### string
+
+rust 中的 String 和&str 默认都是 UTF-8，所有 String 中的每个字符在 Rust 所占的字节数是不确定的，因此 Rust 没有提供 index 查找功能。取而代之的是根据 chars 和 bytes，转成规则的集合后再查找。
+
+#### hashmap
+
 ### Rust编译
 
 ## 参考资料
