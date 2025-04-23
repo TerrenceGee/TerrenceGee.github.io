@@ -147,3 +147,13 @@ redis-server /opt/redis/redis.conf
 ## 13.Redis 监控运维云平台 CacheCloud
 
 ## 14.Redis 配置统计字典
+
+
+```
+$ wget http://download.redis.io/releases/redis-3.0.7.tar.gz
+$ tar xzf redis-3.0.7.tar.gz
+$ ln -s redis-3.0.7 redis
+$ cd redis
+$ make
+$ make install
+```
