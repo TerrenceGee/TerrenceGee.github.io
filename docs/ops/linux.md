@@ -19,3 +19,21 @@
   - SWAP，在内存不够使用时，借助这个区域来缓存，一般5G就够用了。
 
 ![alt text](image.png)
+
+## linux命令收集
+
+```bash
+# ：查看系统内核及硬件信息
+uname -a
+# ：查看系统发行版信息
+cat /etc/issue
+```
+
+![alt text](image-1.png)
+
+```text
+export JAVA_HOME=/opt/jdk1.8
+export JRE_HOME=$JAVA_HOME/jre
+export PATH=$PATH:$JAVA_HOME/bin
+export CLASSPATH=./://$JAVA_HOME/lib:$JRE_HOME/lib
+```

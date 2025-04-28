@@ -88,3 +88,45 @@ GET _cluster/health
 
 索引-Index，类似于关系型数据库中的表
 文档-Document，类似于关系型数据库的数据行
+
+## 安装
+
+### docker安装单机版
+
+```yml
+version: '3'
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.12.0
+    container_name: elasticsearch
+    environment:
+      - discovery.type=single-node
+      - ES_JAVA_OPTS=-Xms1g -Xmx1g
+      - xpack.security.enabled=false # 禁用认证（仅测试环境使用）
+    volumes:
+      - es_data:/usr/share/elasticsearch/data
+    ports:
+      - "9200:9200"
+    networks:
+      - elk_network
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.12.0
+    container_name: kibana
+    depends_on:
+      - elasticsearch
+    ports:
+      - "5601:5601"
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+    networks:
+      - elk_network
+
+volumes:
+  es_data:
+
+networks:
+  elk_network:
+    driver: bridge
+~                    
+```
