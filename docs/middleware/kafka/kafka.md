@@ -133,3 +133,23 @@ enable.auto.commit=true
 # 自动提交消息的时间间隔
 auto.commit.interval.ms
 ```
+
+
+## 性能测试工具
+
+```sh
+# 向kafka中发送 1_000_000 条消息，每个消息大小是 1024B
+bin/kafka-producer-perf-test.sh --topic topic-1 --num-records 1000000 \
+--record-size 1024 --throughput -1 --producer-props bootstrap.servers=localhost:9092 acks=1
+#
+bin/kafka-consumer-perf-test.sh --topic topic-1 --messages 1000000 --broker-list localhost:9092
+```
+
+一个可参考的集群测试报告
+
+环境：云主机（memory: 8G, disk capacity: 40G, CPU: 2600MHz * 4, JVM: 1.8）
+测试用例：脚本发送 1_000_000 条消息，每条消息大小 1KB
+控制变量：分区数，分别为1、20、50、100、200、500、1000，其副本数都是1
+
+![img.png](img.png)
+
