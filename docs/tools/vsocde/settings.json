@@ -1,0 +1,18 @@
+{
+    "vim.handleKeys": {
+        "<C-c>": false,
+        "<C-v>": false,
+        "<C-x>": false,
+        "<C-a>": false,
+        "<C-f>": false,
+        "<C-z>": false,
+        "<C-y>": false,
+        "<C-s>": false,
+        "<C-h>": false,
+        "<C-/>": false,
+        // "<C-[>": false,
+    //   "<C-]>": false,
+        "<C-w>": false
+    },
+    "explorer.confirmDragAndDrop": false
+}
