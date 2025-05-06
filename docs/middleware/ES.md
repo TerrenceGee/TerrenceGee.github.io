@@ -127,6 +127,84 @@ volumes:
 
 networks:
   elk_network:
+    driver: bridge                  
+```
+
+### docker安装集群版
+
+```yml
+version: '3'
+services:
+  elasticsearch-node1:
+    image: $ES_IMAGE
+    container_name: elasticsearch-node1
+    environment:
+      - cluster.name=es-docker-cluster
+      - discovery.seed_hosts=elasticsearch-node1,elasticsearch-node2
+      - cluster.initial_master_nodes=elasticsearch-node1,elasticsearch-node2
+      - bootstrap.memory_lock=true
+      - ES_JAVA_OPTS=-Xms1g -Xmx1g
+      - xpack.security.enabled=false # 禁用认证（仅测试环境使用）
+    volumes:
+      - es_data:/usr/share/elasticsearch/data
+    ports:
+      - "9200:9200"
+    networks:
+      - elk_network
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    restart: always
+    privileged: true
+
+  elasticsearch-node2:
+    image: $ES_IMAGE
+    container_name: elasticsearch-node2
+    environment:
+      - cluster.name=es-docker-cluster
+      - discovery.seed_hosts=elasticsearch-node1,elasticsearch-node2
+      - cluster.initial_master_nodes=elasticsearch-node1,elasticsearch-node2
+      - bootstrap.memory_lock=true
+      - ES_JAVA_OPTS=-Xms1g -Xmx1g
+      - xpack.security.enabled=false # 禁用认证（仅测试环境使用）
+    volumes:
+      - es_data_node2:/usr/share/elasticsearch/data
+    networks:
+      - elk_network
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    restart: always
+    privileged: true
+
+  kibana:
+    image: $KIBANA_IMAGE
+    container_name: kibana
+    depends_on:
+      - elasticsearch-node1
+      - elasticsearch-node2
+    ports:
+      - "5601:5601"
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch-node1:9200
+    networks:
+      - elk_network
+    restart: always
+
+volumes:
+  es_data:
+  es_data_node2:
+
+networks:
+  elk_network:
     driver: bridge
-~                    
+```
+
+版本信息：
+
+```properties
+ES_IMAGE=elasticsearch:7.17.10
+KIBANA_IMAGE=kibana:7.17.10
 ```
