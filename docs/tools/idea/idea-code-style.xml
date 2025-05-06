@@ -1,0 +1,20 @@
+<code_scheme name="Project" version="173">
+    <code_scheme name="Project" version="173">
+        <JavaCodeStyleSettings>
+            <option name="DO_NOT_WRAP_AFTER_SINGLE_ANNOTATION" value="true"/>
+            <option name="DO_NOT_WRAP_AFTER_SINGLE_ANNOTATION_IN_PARAMETER" value="true"/>
+        </JavaCodeStyleSettings>
+        <ScalaCodeStyleSettings>
+            <option name="MULTILINE_STRING_CLOSING_QUOTES_ON_NEW_LINE" value="true"/>
+        </ScalaCodeStyleSettings>
+        <codeStyleSettings language="JAVA">
+            <option name="RIGHT_MARGIN" value="120"/>
+            <option name="ALIGN_MULTILINE_PARAMETERS_IN_CALLS" value="true"/>
+            <option name="CALL_PARAMETERS_WRAP" value="1"/>
+            <option name="METHOD_PARAMETERS_WRAP" value="1"/>
+            <option name="METHOD_CALL_CHAIN_WRAP" value="1"/>
+            <option name="BINARY_OPERATION_WRAP" value="1"/>
+            <option name="WRAP_ON_TYPING" value="0"/>
+        </codeStyleSettings>
+    </code_scheme>
+</code_scheme>
