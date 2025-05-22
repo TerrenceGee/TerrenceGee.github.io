@@ -14,7 +14,7 @@
 - MappedStatement 对象：封闭映射 SQL
 - ResultHandler 对象：处理返回结果
 
-![MyBatis工作原理](./image/MyBatis工作原理.png)
+![MyBatis工作原理](../image/MyBatis工作原理.png)
 
 上图中，2和3步骤应该是并行的
 

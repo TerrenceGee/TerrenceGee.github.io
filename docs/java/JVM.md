@@ -116,11 +116,11 @@ java 中对象的内存的大小是确定，分配方法则有两种
 
 ### 经典垃圾回收器
 
-![HotSpot虚拟机的垃圾收集器](./image/HotSpot虚拟机的垃圾收集器.png)
+<!-- ![HotSpot虚拟机的垃圾收集器](./image/HotSpot虚拟机的垃圾收集器.png) -->
 
 Serial 收集器：进行垃圾收集时，必须暂停其他所有工作线程，Stop The World。
 
-![Serial垃圾收集器工作方式](Serial垃圾收集器工作方式.png)
+<!-- ![Serial垃圾收集器工作方式](Serial垃圾收集器工作方式.png) -->
 
 ParNew 收集器：多线程版本的 Serial 收集器，与 CMS 搭配使用，它应用于年轻代，而 CMS 应用于老年代
 

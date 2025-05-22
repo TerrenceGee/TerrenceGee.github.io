@@ -151,5 +151,5 @@ bin/kafka-consumer-perf-test.sh --topic topic-1 --messages 1000000 --broker-list
 测试用例：脚本发送 1_000_000 条消息，每条消息大小 1KB
 控制变量：分区数，分别为1、20、50、100、200、500、1000，其副本数都是1
 
-![img.png](img.png)
+<!-- ![img.png](img.png) -->
 
