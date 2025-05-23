@@ -83,337 +83,6 @@ profiles:
     group: 8ed42e88-7386-4c7e-a12f-fe69e3a85874
     name: '122'
     id: ssh:custom:122:cf580d94-7df7-40ce-b56a-3d8f601f7a7a
-groups:
-  - id: 8ed42e88-7386-4c7e-a12f-fe69e3a85874
-    name: dev
-  - id: 8ed42e88-7386-4c7e-a12f-fe69e3a85874
-    name: dev
-  - id: 781c7984-b2ec-414a-84d8-82cfad12cffe
-    name: primihub
-  - id: 93ecf7bc-05da-4690-bc4d-fa7d92ed4c5f
-    name: office
-  - id: 7e5a290e-8e22-414f-90aa-9410fc302cc3
-    name: cloud
-configSync:
-  parts: {}
-hotkeys:
-  toggle-window:
-    - Ctrl-Space
-  copy-current-path: []
-  ctrl-c:
-    - Ctrl-C
-  copy:
-    - Ctrl-Shift-C
-  paste:
-    - Ctrl-Shift-V
-    - Shift-Insert
-  select-all:
-    - Ctrl-Shift-A
-  clear: []
-  zoom-in:
-    - Ctrl-=
-    - Ctrl-Shift-=
-  zoom-out:
-    - Ctrl--
-    - Ctrl-Shift--
-  reset-zoom:
-    - Ctrl-0
-  home:
-    - Home
-  end:
-    - End
-  previous-word:
-    - Ctrl-Left
-  next-word:
-    - Ctrl-Right
-  delete-previous-word:
-    - Ctrl-Backspace
-  delete-line:
-    - Ctrl-Shift-Backspace
-  delete-next-word:
-    - Ctrl-Delete
-  search:
-    - Ctrl-Shift-F
-  pane-focus-all:
-    - Ctrl-Shift-I
-  focus-all-tabs:
-    - Ctrl-Alt-Shift-I
-  scroll-to-top:
-    - Ctrl-PageUp
-  scroll-page-up:
-    - Alt-PageUp
-  scroll-up:
-    - Ctrl-Shift-Up
-  scroll-down:
-    - Ctrl-Shift-Down
-  scroll-page-down:
-    - Alt-PageDown
-  scroll-to-bottom:
-    - Ctrl-PageDown
-  restart-telnet-session: []
-  restart-ssh-session: []
-  launch-winscp: []
-  settings-tab: {}
-  settings:
-    - Ctrl-,
-  serial:
-    - Alt-K
-  restart-serial-session: []
-  new-tab:
-    - Ctrl-Shift-T
-  new-window:
-    - Ctrl-Shift-N
-  profile: {}
-  profile-selectors: {}
-  group-selectors: {}
-  toggle-fullscreen:
-    - F11
-    - Alt-Enter
-  close-tab:
-    - Ctrl-Shift-W
-  reopen-tab:
-    - Ctrl-Shift-Z
-  toggle-last-tab: []
-  rename-tab:
-    - Ctrl-Shift-R
-  next-tab:
-    - Ctrl-Shift-Right
-    - Ctrl-Tab
-  previous-tab:
-    - Ctrl-Shift-Left
-    - Ctrl-Shift-Tab
-  move-tab-left:
-    - Ctrl-Shift-PageUp
-  move-tab-right:
-    - Ctrl-Shift-PageDown
-  rearrange-panes:
-    - Ctrl-Shift
-  duplicate-tab: []
-  restart-tab: []
-  reconnect-tab: []
-  disconnect-tab: []
-  explode-tab:
-    - Ctrl-Shift-.
-  combine-tabs:
-    - Ctrl-Shift-,
-  tab-1:
-    - Alt-1
-  tab-2:
-    - Alt-2
-  tab-3:
-    - Alt-3
-  tab-4:
-    - Alt-4
-  tab-5:
-    - Alt-5
-  tab-6:
-    - Alt-6
-  tab-7:
-    - Alt-7
-  tab-8:
-    - Alt-8
-  tab-9:
-    - Alt-9
-  tab-10:
-    - Alt-0
-  tab-11: []
-  tab-12: []
-  tab-13: []
-  tab-14: []
-  tab-15: []
-  tab-16: []
-  tab-17: []
-  tab-18: []
-  tab-19: []
-  tab-20: []
-  split-right:
-    - Ctrl-Shift-S
-  split-bottom:
-    - Ctrl-Shift-D
-  split-left: []
-  split-top: []
-  pane-nav-right:
-    - Ctrl-Alt-Right
-  pane-nav-down:
-    - Ctrl-Alt-Down
-  pane-nav-up:
-    - Ctrl-Alt-Up
-  pane-nav-left:
-    - Ctrl-Alt-Left
-  pane-nav-previous:
-    - Ctrl-Alt-[
-  pane-nav-next:
-    - Ctrl-Alt-]
-  pane-nav-1: []
-  pane-nav-2: []
-  pane-nav-3: []
-  pane-nav-4: []
-  pane-nav-5: []
-  pane-nav-6: []
-  pane-nav-7: []
-  pane-nav-8: []
-  pane-nav-9: []
-  pane-maximize:
-    - Ctrl-Alt-Enter
-  close-pane: []
-  pane-increase-vertical: []
-  pane-decrease-vertical: []
-  pane-increase-horizontal: []
-  pane-decrease-horizontal: []
-  switch-profile:
-    - Ctrl-Alt-T
-  profile-selector:
-    - Ctrl-Shift-E
-  command-selector:
-    - Ctrl-Shift-P
-terminal:
-  searchOptions: {}
-  colorScheme:
-    name: Tabby Default
-    foreground: '#cacaca'
-    background: '#171717'
-    cursor: '#bbbbbb'
-    colors:
-      - '#000000'
-      - '#ff615a'
-      - '#b1e969'
-      - '#ebd99c'
-      - '#5da9f6'
-      - '#e86aff'
-      - '#82fff7'
-      - '#dedacf'
-      - '#313131'
-      - '#f58c80'
-      - '#ddf88f'
-      - '#eee5b2'
-      - '#a5c7ff'
-      - '#ddaaff'
-      - '#b7fff9'
-      - '#ffffff'
-  profile: local:default
-ssh:
-  knownHosts:
-    - host: 192.168.190.129
-      port: 22
-      type: ecdsa-sha2-nistp256
-      digest: r8BmTkaVi2SmbAzgBXi15F1KAXAvaEOuFlX33Puu6sQ=
-    - host: 192.168.190.130
-      port: 22
-      type: ecdsa-sha2-nistp256
-      digest: q7YJANKZiSMCx374K461fwG4aibSArYUHEExX0a2FMQ=
-    - host: 192.168.190.128
-      port: 22
-      type: ecdsa-sha2-nistp256
-      digest: R+/XGx/lmZCrq6LdMSIarGa/OdQovKbHEgnPzIwUEWY=
-    - host: 10.26.20.118
-      port: 22
-      type: ecdsa-sha2-nistp256
-      digest: efz1YvOyN8RCPdJVvUKVdEmUo5oglEcn9r9F4AbzX7o=
-    - host: 10.26.20.120
-      port: 22122
-      type: ecdsa-sha2-nistp256
-      digest: qMmHt9QBICBmN94OmAJxaV3kcWMbWAPDehk8sn3h90I=
-    - host: 10.26.20.121
-      port: 22122
-      type: ecdsa-sha2-nistp256
-      digest: qMmHt9QBICBmN94OmAJxaV3kcWMbWAPDehk8sn3h90I=
-clickableLinks: {}
-accessibility: {}
-appearance: {}
-hacks: {}
-pluginBlacklist: []
-providerBlacklist: []
-commandBlacklist: []
-profileDefaults:
-  ssh:
-    disableDynamicTitle: true
-profileBlacklist: []
-
-version: 7
-profiles:
-  - type: ssh
-    name: '180'
-    icon: fas fa-desktop
-    options:
-      host: ''
-      user: dataaware
-      algorithms: {}
-      input: {}
-      auth: password
-    weight: -1
-    id: ssh:custom:180:13ca640c-fd80-4ab9-9548-d267e07277dd
-  - type: ssh
-    name: vm1-ubuntu20
-    icon: fas fa-desktop
-    options:
-      host: 192.168.190.128
-      user: dev
-      algorithms: {}
-      input: {}
-      privateKeys: []
-    weight: -1
-    id: ssh:custom:vm1-ubuntu20-copy:46a30ba6-d2b4-4a39-8a29-0167d93d7063
-  - type: ssh
-    name: vm3-ubuntu20
-    icon: fas fa-desktop
-    options:
-      host: 192.168.190.130
-      user: dev
-      algorithms: {}
-      input: {}
-      privateKeys: []
-    weight: -1
-    id: ssh:custom:vm2:365193f5-928a-4d1f-b2cf-877459877894
-  - type: ssh
-    icon: fas fa-desktop
-    options:
-      host: 10.26.20.118
-      user: dataaware
-      algorithms: {}
-      input: {}
-      auth: password
-    weight: -1
-    name: '118'
-    id: ssh:custom:118:507bae83-8992-4927-8553-44a511ac1c73
-    group: 8ed42e88-7386-4c7e-a12f-fe69e3a85874
-  - type: ssh
-    icon: fas fa-desktop
-    options:
-      host: 10.26.20.120
-      user: dataaware
-      algorithms: {}
-      input: {}
-      auth: password
-      port: 22122
-    weight: -1
-    group: 8ed42e88-7386-4c7e-a12f-fe69e3a85874
-    name: '120'
-    id: ssh:custom:120:abc2dda4-4edb-40e3-8d11-3fe36b2ddcdc
-  - type: ssh
-    icon: fas fa-desktop
-    options:
-      host: 10.26.20.121
-      user: dataaware
-      algorithms: {}
-      input: {}
-      auth: password
-      port: 22122
-    weight: -1
-    group: 8ed42e88-7386-4c7e-a12f-fe69e3a85874
-    name: '121'
-    id: ssh:custom:120-copy:eb72d878-4e32-4fa6-af14-57ed081276f5
-  - type: ssh
-    icon: fas fa-desktop
-    options:
-      host: 10.26.20.122
-      user: dataaware
-      algorithms: {}
-      input: {}
-      auth: password
-    weight: -1
-    group: 8ed42e88-7386-4c7e-a12f-fe69e3a85874
-    name: '122'
-    id: ssh:custom:122:cf580d94-7df7-40ce-b56a-3d8f601f7a7a
   - type: ssh
     icon: fas fa-desktop
     options:
@@ -425,17 +94,17 @@ profiles:
     weight: -1
     group: 7e5a290e-8e22-414f-90aa-9410fc302cc3
     name: 118.190.39.100
-    id: ssh:custom:118.190.39.100:f3fcc866-a029-4770-8c27-1028aa7cda4f
+    id: ssh:custom: 118.190.39.100:f3fcc866-a029-4770-8c27-1028aa7cda4f
   - type: ssh
-    name: 203.83.232.58
+    name: '203.83.232.58 '
     icon: fas fa-desktop
     options:
-      host: 203.83.232.58
+      host: '203.83.232.58 '
       algorithms: {}
       input: {}
       auth: password
     weight: -1
-    id: ssh:custom:203.83.232.58:217c34dd-b916-4b75-b199-f8d9a7b58f09
+    id: ssh:custom: 203.83.232.58: 217c34dd-b916-4b75-b199-f8d9a7b58f09
     group: 7e5a290e-8e22-414f-90aa-9410fc302cc3
   - type: ssh
     icon: fas fa-desktop
@@ -448,7 +117,7 @@ profiles:
     weight: -1
     group: 93ecf7bc-05da-4690-bc4d-fa7d92ed4c5f
     name: '31'
-    id: ssh:custom:31:b06925a2-ed7d-434d-a795-810ab0e2d84e
+    id: ssh:custom: 31:b06925a2-ed7d-434d-a795-810ab0e2d84e
   - type: ssh
     name: '58'
     icon: fas fa-desktop
@@ -497,7 +166,7 @@ profiles:
       scripts: []
     weight: -1
     group: 93ecf7bc-05da-4690-bc4d-fa7d92ed4c5f
-    id: ssh:custom:172.21.1.58:073cf16c-6167-483c-b71a-ecbf13ef3c4c
+    id: ssh:custom: 172.21.1.58: 073cf16c-6167-483c-b71a-ecbf13ef3c4c
   - type: ssh
     name: '62'
     icon: fas fa-desktop
@@ -509,7 +178,7 @@ profiles:
       privateKeys: []
     weight: -1
     group: 93ecf7bc-05da-4690-bc4d-fa7d92ed4c5f
-    id: ssh:custom:172.21.1.62:e72e2ee3-c3c3-4527-833c-a4bc91d3c265
+    id: ssh:custom: 172.21.1.62:e72e2ee3-c3c3-4527-833c-a4bc91d3c265
   - type: ssh
     name: '63'
     icon: fas fa-desktop
@@ -521,7 +190,7 @@ profiles:
       privateKeys: []
     weight: -1
     group: 93ecf7bc-05da-4690-bc4d-fa7d92ed4c5f
-    id: ssh:custom:172.21.1.62-copy:c82a63f4-d8e6-4c5e-afab-29c81bb652e5
+    id: ssh:custom: 172.21.1.62-copy:c82a63f4-d8e6-4c5e-afab-29c81bb652e5
   - type: ssh
     icon: fas fa-desktop
     options:
@@ -532,7 +201,7 @@ profiles:
       privateKeys: []
     weight: -1
     group: 93ecf7bc-05da-4690-bc4d-fa7d92ed4c5f
-    id: ssh:custom:172.21.1.62-copy-copy:29d2de1b-d904-4439-9d1d-bfad75e413cd
+    id: ssh:custom: 172.21.1.62-copy-copy: 29d2de1b-d904-4439-9d1d-bfad75e413cd
     name: '64'
   - type: ssh
     icon: fas fa-desktop
@@ -544,7 +213,7 @@ profiles:
       privateKeys: []
     weight: -1
     group: 93ecf7bc-05da-4690-bc4d-fa7d92ed4c5f
-    id: ssh:custom:172.21.1.62-copy-copy-copy:35261163-1fb8-44e5-972c-407bab1f8e30
+    id: ssh:custom: 172.21.1.62-copy-copy-copy: 35261163-1fb8-44e5-972c-407bab1f8e30
     name: '65'
   - type: ssh
     icon: fas fa-desktop
@@ -556,7 +225,7 @@ profiles:
     weight: -1
     group: 781c7984-b2ec-414a-84d8-82cfad12cffe
     name: 10-harbor
-    id: ssh:custom:10:ed72bc92-7ea5-4657-8c21-851c20d9b954
+    id: ssh:custom: 10:ed72bc92-7ea5-4657-8c21-851c20d9b954
   - type: ssh
     icon: fas fa-desktop
     options:
@@ -567,7 +236,7 @@ profiles:
     weight: -1
     group: 781c7984-b2ec-414a-84d8-82cfad12cffe
     name: '11'
-    id: ssh:custom:11:e024a2c8-7bcc-4f6c-8e3c-309a978490c0
+    id: ssh:custom: 11:e024a2c8-7bcc-4f6c-8e3c-309a978490c0
   - type: ssh
     icon: fas fa-desktop
     options:
@@ -579,7 +248,7 @@ profiles:
     weight: -1
     name: '12'
     group: 781c7984-b2ec-414a-84d8-82cfad12cffe
-    id: ssh:custom:11:3c0d5269-4e9c-4dc0-a050-6f0b251c20bf
+    id: ssh:custom: 11: 3c0d5269-4e9c-4dc0-a050-6f0b251c20bf
   - type: ssh
     icon: fas fa-desktop
     options:
@@ -589,7 +258,7 @@ profiles:
       auth: password
     weight: -1
     name: '13'
-    id: ssh:custom:13:f280f1b4-47e6-4282-9345-f9b591d86fc3
+    id: ssh:custom: 13:f280f1b4-47e6-4282-9345-f9b591d86fc3
     group: 781c7984-b2ec-414a-84d8-82cfad12cffe
   - type: ssh
     icon: fas fa-desktop
@@ -601,7 +270,7 @@ profiles:
     weight: -1
     group: 781c7984-b2ec-414a-84d8-82cfad12cffe
     name: '14'
-    id: ssh:custom:14:51771319-d149-43d6-8090-240b74360e90
+    id: ssh:custom: 14: 51771319-d149-43d6-8090-240b74360e90
   - type: ssh
     name: 14-vmware
     icon: fas fa-desktop
@@ -612,7 +281,7 @@ profiles:
       privateKeys: []
     weight: -1
     group: 781c7984-b2ec-414a-84d8-82cfad12cffe
-    id: ssh:custom:14-vmware:c4313ddb-1824-4a09-a4bf-3e62b423fa72
+    id: ssh:custom: 14-vmware:c4313ddb-1824-4a09-a4bf-3e62b423fa72
   - type: ssh
     icon: fas fa-desktop
     options:
@@ -623,7 +292,7 @@ profiles:
     weight: -1
     name: '15'
     group: 781c7984-b2ec-414a-84d8-82cfad12cffe
-    id: ssh:custom:15:8f1d4aff-7681-4759-9f99-8ce74dc9b44c
+    id: ssh:custom: 15: 8f1d4aff-7681-4759-9f99-8ce74dc9b44c
   - type: ssh
     icon: fas fa-desktop
     options:
@@ -634,7 +303,7 @@ profiles:
     weight: -1
     name: '16'
     group: 781c7984-b2ec-414a-84d8-82cfad12cffe
-    id: ssh:custom:16:e0504fd6-87ff-4548-abb0-d03935fac1be
+    id: ssh:custom: 16:e0504fd6-87ff-4548-abb0-d03935fac1be
   - type: ssh
     icon: fas fa-desktop
     options:
@@ -645,7 +314,7 @@ profiles:
     weight: -1
     group: 781c7984-b2ec-414a-84d8-82cfad12cffe
     name: '18'
-    id: ssh:custom:18:694a59c5-481e-4e7b-9fec-a8518e5d2557
+    id: ssh:custom: 18: 694a59c5-481e-4e7b-9fec-a8518e5d2557
   - type: ssh
     icon: fas fa-desktop
     options:
@@ -693,7 +362,7 @@ profiles:
     weight: -1
     name: '19'
     group: 781c7984-b2ec-414a-84d8-82cfad12cffe
-    id: ssh:custom:18:91d5a1fc-dbce-4fc6-8f20-4d780139cf0e
+    id: ssh:custom: 18: 91d5a1fc-dbce-4fc6-8f20-4d780139cf0e
   - type: ssh
     name: '21'
     icon: fas fa-desktop
@@ -705,7 +374,7 @@ profiles:
       privateKeys: []
     weight: -1
     group: 781c7984-b2ec-414a-84d8-82cfad12cffe
-    id: ssh:custom:21:e408a844-23fb-4f97-a943-8c5237665121
+    id: ssh:custom: 21:e408a844-23fb-4f97-a943-8c5237665121
   - type: ssh
     name: '22'
     icon: fas fa-desktop
@@ -716,7 +385,7 @@ profiles:
       input: {}
       privateKeys: []
     weight: -1
-    id: ssh:custom:22:06bd4e26-a75d-492d-a058-017e56b91d4d
+    id: ssh:custom: 22: 06bd4e26-a75d-492d-a058-017e56b91d4d
     group: 781c7984-b2ec-414a-84d8-82cfad12cffe
   - type: ssh
     name: '23'
@@ -729,7 +398,7 @@ profiles:
       privateKeys: []
     weight: -1
     group: 781c7984-b2ec-414a-84d8-82cfad12cffe
-    id: ssh:custom:23:42b614ad-f1e6-45d5-9821-9fefc72b6778
+    id: ssh:custom: 23: 42b614ad-f1e6-45d5-9821-9fefc72b6778
   - type: ssh
     icon: fas fa-desktop
     options:
@@ -741,7 +410,7 @@ profiles:
     weight: -1
     group: 781c7984-b2ec-414a-84d8-82cfad12cffe
     name: '24'
-    id: ssh:custom:24:675a2604-60eb-4399-8e5d-60c3d3c3f0ba
+    id: ssh:custom: 24: 675a2604-60eb-4399-8e5d-60c3d3c3f0ba
   - type: ssh
     icon: fas fa-desktop
     options:
@@ -752,7 +421,7 @@ profiles:
     weight: -1
     group: 781c7984-b2ec-414a-84d8-82cfad12cffe
     name: '26'
-    id: ssh:custom:26:5fe47c70-9b17-47c6-9962-13ff7db8a308
+    id: ssh:custom: 26: 5fe47c70-9b17-47c6-9962-13ff7db8a308
   - type: ssh
     icon: fas fa-desktop
     options:
@@ -764,7 +433,7 @@ profiles:
     weight: -1
     group: 781c7984-b2ec-414a-84d8-82cfad12cffe
     name: '27'
-    id: ssh:custom:26:d4158b78-57ea-4a12-bd7e-918435787b52
+    id: ssh:custom: 26:d4158b78-57ea-4a12-bd7e-918435787b52
   - type: ssh
     icon: fas fa-desktop
     options:
@@ -774,7 +443,7 @@ profiles:
       privateKeys: []
     weight: -1
     name: '30'
-    id: ssh:custom:30:e6c9f2b2-c3d5-4d88-86b6-0b64bc54f8b7
+    id: ssh:custom: 30:e6c9f2b2-c3d5-4d88-86b6-0b64bc54f8b7
     group: 781c7984-b2ec-414a-84d8-82cfad12cffe
   - type: ssh
     icon: fas fa-desktop
@@ -786,7 +455,7 @@ profiles:
     weight: -1
     group: 781c7984-b2ec-414a-84d8-82cfad12cffe
     name: '31'
-    id: ssh:custom:31:a5c184ef-4108-4dba-9336-d557bb617ae5
+    id: ssh:custom: 31:a5c184ef-4108-4dba-9336-d557bb617ae5
   - type: ssh
     icon: fas fa-desktop
     options:
@@ -797,7 +466,7 @@ profiles:
     weight: -1
     group: 781c7984-b2ec-414a-84d8-82cfad12cffe
     name: '32'
-    id: ssh:custom:32:6efc00b2-2c61-4d57-bf8a-5e2abd2d09c1
+    id: ssh:custom: 32:6efc00b2-2c61-4d57-bf8a-5e2abd2d09c1
   - type: ssh
     icon: fas fa-desktop
     options:
@@ -809,7 +478,7 @@ profiles:
     weight: -1
     group: 781c7984-b2ec-414a-84d8-82cfad12cffe
     name: '33'
-    id: ssh:custom:33:f5677e26-d2e1-4d3a-9397-9ac51a585f91
+    id: ssh:custom: 33:f5677e26-d2e1-4d3a-9397-9ac51a585f91
   - type: ssh
     icon: fas fa-desktop
     options:
@@ -821,7 +490,7 @@ profiles:
     weight: -1
     group: 781c7984-b2ec-414a-84d8-82cfad12cffe
     name: 34 sgx
-    id: ssh:custom:34:4fd81de1-3017-40b5-82b3-549975e3901f
+    id: ssh:custom: 34: 4fd81de1-3017-40b5-82b3-549975e3901f
 groups:
   - id: 8ed42e88-7386-4c7e-a12f-fe69e3a85874
     name: dev
@@ -977,7 +646,8 @@ hotkeys:
   pane-nav-previous:
     - Ctrl-Alt-[
   pane-nav-next:
-    - Ctrl-Alt-]
+    - Ctrl-Alt-
+]
   pane-nav-1: []
   pane-nav-2: []
   pane-nav-3: []
@@ -1055,30 +725,6 @@ terminal:
   profile: local:powershell
 ssh:
   knownHosts:
-    - host: 192.168.190.129
-      port: 22
-      type: ecdsa-sha2-nistp256
-      digest: r8BmTkaVi2SmbAzgBXi15F1KAXAvaEOuFlX33Puu6sQ=
-    - host: 192.168.190.130
-      port: 22
-      type: ecdsa-sha2-nistp256
-      digest: q7YJANKZiSMCx374K461fwG4aibSArYUHEExX0a2FMQ=
-    - host: 192.168.190.128
-      port: 22
-      type: ecdsa-sha2-nistp256
-      digest: R+/XGx/lmZCrq6LdMSIarGa/OdQovKbHEgnPzIwUEWY=
-    - host: 10.26.20.118
-      port: 22
-      type: ecdsa-sha2-nistp256
-      digest: efz1YvOyN8RCPdJVvUKVdEmUo5oglEcn9r9F4AbzX7o=
-    - host: 10.26.20.120
-      port: 22122
-      type: ecdsa-sha2-nistp256
-      digest: qMmHt9QBICBmN94OmAJxaV3kcWMbWAPDehk8sn3h90I=
-    - host: 10.26.20.121
-      port: 22122
-      type: ecdsa-sha2-nistp256
-      digest: qMmHt9QBICBmN94OmAJxaV3kcWMbWAPDehk8sn3h90I=
     - host: 192.168.99.22
       port: 22
       type: ecdsa-sha2-nistp256
@@ -1149,10 +795,108 @@ ssh:
       digest: w5ERZjPllBrSYrGOs9XJyOxeG5xvLPc3dElGge3FGmU=
     - host: 192.168.99.15
       port: 22
-      type: ecdsa-sha
-clickableLinks: {}
+      type: ecdsa-sha2-nistp256
+      digest: V43AKMT0CKdmMyS2OC/fG5DiT4Rq9ocKeC //SBDRDlM=
+    - host: 192.168.99.31
+      port: 22
+      type: ecdsa-sha2-nistp256
+      digest: XL+H9+xbsLpE0DQYRxIqxaD1PBznkdRkBo9yOyX69n4=
+    - host: 192.168.99.32
+      port: 22
+      type: ecdsa-sha2-nistp256
+      digest: Jq74wuwNemuxiTk5CBRzHR2DEo1JFpdnarJZHWxt4F4=
+    - host: 192.168.99.12
+      port: 22
+      type: ecdsa-sha2-nistp256
+      digest: FTm4MPpBJ0YHGiI45oHZmueTG+RKw0sL1RKLulJKwWM=
+    - host: 192.168.99.16
+      port: 22
+      type: ecdsa-sha2-nistp256
+      digest: YGJ+PveJBN2TjlV00OFgR7jm4SB8TjtfieJFwntb6KY=
+    - host: 192.168.99.27
+      port: 22
+      type: ssh-rsa
+      digest: iqMu6xmkaocbmHW4ejr0REqMGiIBVgaBz4CkocSwopI=
+    - host: 172.21.1.31
+      port: 22
+      type: ecdsa-sha2-nistp256
+      digest: pxj7VbgT00crHtfFxT2KvPRLT0fOTmx7SpRkYh1TCfU=
+    - host: 192.168.99.18
+      port: 22
+      type: ecdsa-sha2-nistp256
+      digest: dfZ8Esiykd3+Z/sAsgnu2IASxnSpUMZqpO7na24bf8Q=
+    - host: 192.168.99.19
+      port: 22
+      type: ecdsa-sha2-nistp256
+      digest: 3oDFH4EJmZ4K7+XMdAgdB0tskeydpaPVKJrGcSEvdd4=
+    - host: 192.168.99.34
+      port: 22
+      type: ecdsa-sha2-nistp256
+      digest: kjjfUc0COVab9u0CwtH8Tl+nZobFXzlTeSZ1Ud+n3gk=
+    - host: 192.168.99.21
+      port: 22
+      type: ecdsa-sha2-nistp256
+      digest: prc+7VILRJDBubhElMdQxOG3EMS22chTa/foLGMauc4=
+    - host: 172.21.1.26
+      port: 22
+      type: ecdsa-sha2-nistp256
+      digest: ZBDU+704jObe85ylWNYobZsgsAjIzhIh8JmyPd1jIgA=
+    - host: '203.83.232.58 '
+      port: 22
+      type: ecdsa-sha2-nistp256
+      digest: 2pQphoPW/Go8XnLOhBslD1LO6NG+s26OgZ3qo3yWYpY=
+    - host: 192.168.99.14
+      port: 22
+      type: ssh-rsa
+      digest: 0reLkGYnoEcpNjXhbMQZBa+s+jCaJ6FYYcbYcbgVNRU=
+    - host: 10.93.116.49
+      port: 22
+      type: ecdsa-sha2-nistp256
+      digest: z8vY5AktLkA1CA6xULpqbkWDfP0zhR6EweJ9QegAMTQ=
+    - host: 10.93.116.98
+      port: 22
+      type: ecdsa-sha2-nistp256
+      digest: 8NdBm8wiSaqflAalI2vSugul5RFyfw1vT5pgCc6K1hk=
+    - host: 10.93.116.40
+      port: 22
+      type: ecdsa-sha2-nistp256
+      digest: 8mmJbaFHucwPYDMFwWnvBfZd5EX2ajCyCxx/gdZcoDU=
+    - host: 10.93.116.212
+      port: 22
+      type: ecdsa-sha2-nistp256
+      digest: ozrYgpsTS0Bhg7riX9n9602uTOYXIplSuh3uwvCf0yo=
+    - host: 10.93.116.87
+      port: 22
+      type: ecdsa-sha2-nistp256
+      digest: FTm4MPpBJ0YHGiI45oHZmueTG+RKw0sL1RKLulJKwWM=
+    - host: 10.93.116.17
+      port: 22
+      type: ecdsa-sha2-nistp256
+      digest: kX6WOgIUO6AVqGSgKZZG/88JV65SlAiSD0T7pJhYVQY=
+    - host: 10.93.116.34
+      port: 22
+      type: ecdsa-sha2-nistp256
+      digest: XL+H9+xbsLpE0DQYRxIqxaD1PBznkdRkBo9yOyX69n4=
+    - host: 10.93.116.123
+      port: 22
+      type: ecdsa-sha2-nistp256
+      digest: Jq74wuwNemuxiTk5CBRzHR2DEo1JFpdnarJZHWxt4F4=
+    - host: 10.93.116.195
+      port: 22
+      type: ecdsa-sha2-nistp256
+      digest: kjjfUc0COVab9u0CwtH8Tl+nZobFXzlTeSZ1Ud+n3gk=
+clickableLinks:
+  modifier: ctrlKey
 accessibility: {}
 appearance: {}
 hacks: {}
 pluginBlacklist: []
 providerBlacklist: []
+commandBlacklist: []
+profileDefaults:
+  ssh:
+    disableDynamicTitle: true
+profileBlacklist: []
+language: en-US
+enableAutomaticUpdates: false
+recoverTabs: false
