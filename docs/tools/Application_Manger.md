@@ -1,4 +1,4 @@
-# Application Manager
+# 软件管理工具
 
 ## 应用管理工具
 
