@@ -29,3 +29,6 @@ import org.bouncycastle.crypto.params.KeyParameter;
 2. 定位到`maven workspace`中使用该类的模块，选中该模块，点击maven中的`show diagram`功能
 3. 理想情况下会出现一个比较复杂的maven依赖关系tab，在其中使用`ctrl+F`搜索步骤1中的包名
 4. 此时屏幕会定位该包到中央，并且其边缘高亮，可在图中查看其maven依赖关系
+
+## IDEA的配置
+
