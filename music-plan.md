@@ -10,6 +10,14 @@
   - **House**: Disclosure, Fred again..  
   - **Lo-fi**: J Dilla, Nujabes  
 
+> 《Promised Land》 - Joe Smooth
+《French Kiss》 - Lil Louis
+《Finally》 - Kings of Tomorrow
+《Gypsy Woman》 - Crystal Waters
+《Good Life》 - Inner City
+
+
+
 ### **2. 基础设备**
 - **必备设备**：  
   - **电脑**（Win/Mac 均可，建议 8GB+ 内存）  
