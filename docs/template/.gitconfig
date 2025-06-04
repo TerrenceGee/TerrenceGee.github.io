@@ -1,0 +1,14 @@
+[user]
+        name = Terrence Gee
+        email = terrence1337@126.com
+[core]
+        editor = vim
+        paper = less
+        # 针对linux/mac上的应用
+        # client是linux/mac
+        # autocrlf = input
+        # client是win
+        # authcrlf = true
+[color]
+        ui = true
+        
