@@ -96,8 +96,6 @@ const config: Config = {
           label: 'JAVA',
           position: 'left',
         },
-        { type: 'docSidebar', sidebarId: 'rust', label: 'Rust', position: 'left', },
-        { type: 'docSidebar', sidebarId: 'workout', label: 'workout', position: 'right', },
         {
           type: 'docSidebar',
           sidebarId: 'framework',
@@ -128,6 +126,9 @@ const config: Config = {
         //   position: 'left',
         //   label: 'Tutorial',
         // },
+        { type: 'docSidebar', sidebarId: 'rust', label: 'Rust', position: 'left', },
+        { type: 'docSidebar', sidebarId: 'workout', label: 'Workout', position: 'right', },
+        { type: 'docSidebar', sidebarId: 'plan', label: 'Plan', position: 'right', },
         // blog
         {
           to: '/blog/blog',
