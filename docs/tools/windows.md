@@ -20,15 +20,14 @@
 - 启用文件和打印机共享
 - 关闭密码保护共享（若无需密码验证）。
 
-![alt text](image-2.png)
+<!-- ![alt text](image-2.png) -->
 
 2. 设置共享文件夹：
 
 右键点击需要共享的文件夹 → 属性 → 共享 → 高级共享。         \
-勾选 共享此文件夹，设置权限（如允许“Everyone”读取/写入）。   
+勾选 共享此文件夹，设置权限（如允许“Everyone”读取/写入）。
 
-![alt text](image-3.png)
-
+<!-- ![alt text](image-3.png) -->
 
 3. 访问共享文件夹：
 
@@ -44,7 +43,7 @@
 ### 报错解决
 
 错误如图
-![alt text](image-4.png)
+<!-- ![alt text](image-4.png) -->
 
 解决方法：
 
@@ -52,6 +51,6 @@
 2. 计算机配置 > Windows设置 > 安全设置 > 本地策略 > 安全选项 > “账号：来宾账户状态” > “已启用”
 3. 计算机配置 > 管理模板> 网络 > Lanman工作站 > “启用不安全的来宾登录” > “已启用”
 
-![alt text](image-6.png)
+<!-- ![alt text](image-6.png) -->
 
-![alt text](image-7.png)
+<!-- ![alt text](image-7.png) -->
