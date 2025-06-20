@@ -67,59 +67,16 @@ const config: Config = {
     // navbar
     navbar: {
       title: 'Terrence Gee',
-      logo: {
-        alt: 'Terrence Gee Logo',
-        src: 'img/tg.svg',
-      },
+      logo: { alt: 'Terrence Gee Logo', src: 'img/tg.svg', },
       items: [
-        {
-          type: 'docSidebar',
-          sidebarId: 'middleware',
-          position: 'left',
-          label: '中间件',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'design',
-          position: 'left',
-          label: '设计',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'algorithm',
-          position: 'left',
-          label: '算法',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'java',
-          label: 'JAVA',
-          position: 'left',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'framework',
-          position: 'left',
-          label: '框架',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'webApp',
-          position: 'left',
-          label: 'web应用',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'operations',
-          position: 'left',
-          label: '运维',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'tools',
-          position: 'left',
-          label: '工具',
-        },
+        { type: 'docSidebar', sidebarId: 'middleware', position: 'left', label: '中间件', },
+        { type: 'docSidebar', sidebarId: 'design', position: 'left', label: '设计', },
+        { type: 'docSidebar', sidebarId: 'algorithm', position: 'left', label: '算法', },
+        { type: 'docSidebar', sidebarId: 'java', label: 'JAVA', position: 'left', },
+        { type: 'docSidebar', sidebarId: 'framework', position: 'left', label: '框架', },
+        { type: 'docSidebar', sidebarId: 'webApp', position: 'left', label: 'web应用', },
+        { type: 'docSidebar', sidebarId: 'operations', position: 'left', label: '运维', },
+        { type: 'docSidebar', sidebarId: 'tools', position: 'left', label: '工具', },
         // {
         //   type: 'docSidebar',
         //   sidebarId: 'tutorialSidebar',
@@ -131,21 +88,9 @@ const config: Config = {
         { type: 'docSidebar', sidebarId: 'workout', label: 'Workout', position: 'right', },
         { type: 'docSidebar', sidebarId: 'plan', label: 'Plan', position: 'right', },
         // blog
-        {
-          to: '/blog/blog',
-          label: 'Blog',
-          position: 'right',
-        },
-        {
-          to: '/blog/resume',
-          label: 'Resume',
-          position: 'right',
-        },
-        {
-          href: 'https://github.com/TerrenceGee',
-          label: 'GitHub',
-          position: 'right',
-        },
+        { to: '/blog/blog', label: 'Blog', position: 'right', },
+        { to: '/blog/resume', label: 'Resume', position: 'right', },
+        { href: 'https://github.com/TerrenceGee', label: 'GitHub', position: 'right', },
       ],
     },
 
@@ -182,14 +127,8 @@ const config: Config = {
         {
           title: 'More',
           items: [
-            {
-              label: 'Blog',
-              to: '/blog/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/TerrenceGee/blog',
-            },
+            { label: 'Blog', to: '/blog/blog', },
+            { label: 'GitHub', href: 'https://github.com/TerrenceGee/blog', },
           ],
         },
       ],
