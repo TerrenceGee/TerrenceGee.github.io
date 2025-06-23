@@ -69,6 +69,7 @@ const config: Config = {
       title: 'Terrence Gee',
       logo: { alt: 'Terrence Gee Logo', src: 'img/tg.svg', },
       items: [
+        // left
         { type: 'docSidebar', sidebarId: 'middleware', position: 'left', label: '中间件', },
         { type: 'docSidebar', sidebarId: 'design', position: 'left', label: '设计', },
         { type: 'docSidebar', sidebarId: 'algorithm', position: 'left', label: '算法', },
@@ -83,8 +84,11 @@ const config: Config = {
         //   position: 'left',
         //   label: 'Tutorial',
         // },
+        { type: 'docSidebar', sidebarId: 'cyber', label: 'Cyber', position: 'left', },
         { type: 'docSidebar', sidebarId: 'rust', label: 'Rust', position: 'left', },
         { type: 'docSidebar', sidebarId: 'tips', label: 'Tips', position: 'left', },
+
+        // right
         { type: 'docSidebar', sidebarId: 'workout', label: 'Workout', position: 'right', },
         { type: 'docSidebar', sidebarId: 'plan', label: 'Plan', position: 'right', },
         // blog
