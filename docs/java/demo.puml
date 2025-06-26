@@ -1,0 +1,46 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+interface Service
+{
+    + execute(): void
+}
+
+interface Provider
+{
+    + createService(): Service
+}
+
+class Services
+{
+    - providers: Map<String, Provider>
+    + registerProvider(name: String, p: Provider): void
+    + getService(name: String): Service
+}
+
+class DefaultProvider
+{
+    + createService(): Service
+}
+
+class ConcreteService
+{
+    + execute(): void
+}
+
+class Client
+
+' 依赖关系
+Client ..> Services : 使用
+Services ..> Provider : 依赖
+Services ..> Service : 依赖
+
+' 实现关系
+DefaultProvider ..|> Provider
+ConcreteService ..|> Service
+
+' 关联关系
+Services "1" *-- "*" Provider : 注册
+Provider "1" --> "1" Service : 创建
+
+@enduml
