@@ -15,3 +15,9 @@
 ### list comprehension and generator expression
 
 the aim is to build sequence type fast, list comprehension to build a list and generator expression to build other sequence type
+
+#### 元组不仅仅是不可变列表
+
+元组有两个作用：1.作为不可变列表使用；2.没有字段名称的记录
+
+<!-- todo -->
