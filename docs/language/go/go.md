@@ -1,9 +1,13 @@
 # go
 
+## 基础
+
 ### 一、基础打印函数
+
 在Go语言中，打印操作主要通过`fmt`标准包实现，分为**基础打印**、**格式化打印**和**输出重定向**三大类。以下是详细分类解析（附使用场景和性能考量）：
 
 #### 1. 终端标准输出
+
 | 函数签名               | 行为描述                | 示例                       |
 | ---------------------- | ----------------------- | -------------------------- |
 | `fmt.Print(args...)`   | 无分隔符输出，连续打印  | `Print("a", 1)` → `a1`     |
@@ -16,6 +20,7 @@ fmt.Println("Hello", "World") // 输出：Hello World\n
 ```
 
 #### 2. 字符串格式化
+
 | 函数签名                | 返回值               | 使用场景                           |
 | ----------------------- | -------------------- | ---------------------------------- |
 | `fmt.Sprint(args...)`   | 拼接后的字符串       | 字符串构造：`s := Sprint(1,"+",1)` |
@@ -28,7 +33,9 @@ msg := fmt.Sprintln("Error:", err) // "Error: file not found\n"
 ---
 
 ### 二、格式化打印（核心功能）
+
 #### 1. 标准格式化输出
+
 | 函数签名                          | 特性                                 |
 | --------------------------------- | ------------------------------------ |
 | `fmt.Printf(format, args...)`     | 按占位符输出到标准输出               |
@@ -36,6 +43,7 @@ msg := fmt.Sprintln("Error:", err) // "Error: file not found\n"
 | `fmt.Fprintf(w, format, args...)` | 定向输出到`io.Writer`（文件/网络等） |
 
 #### 2. 常用占位符速查
+
 | 占位符 | 类型           | 示例                      | 输出           |
 | ------ | -------------- | ------------------------- | -------------- |
 | `%v`   | 通用值         | `Printf("%v", data)`      | 默认格式       |
@@ -57,7 +65,9 @@ fmt.Printf("User: %s, Age: %02d, Score: %05.2f\n", "Tom", 5, 92.5)
 ---
 
 ### 三、高级打印技巧
+
 #### 1. 输出重定向
+
 ```go
 // 重定向到文件
 file, _ := os.Create("output.log")
@@ -70,7 +80,9 @@ log.Write(buf.Bytes())
 ```
 
 #### 2. 自定义类型打印
+
 实现`Stringer`接口定制输出：
+
 ```go
 type Point struct{ X, Y int }
 
@@ -85,6 +97,7 @@ func main() {
 ```
 
 #### 3. 打印调试技巧
+
 ```go
 // 打印结构体时展开字段
 fmt.Printf("%#v\n", user) 
@@ -99,6 +112,7 @@ fmt.Printf("Data: %#v\n", data)
 ---
 
 ### 四、性能优化指南
+
 | 场景              | 推荐方案                 | 原因                           |
 | ----------------- | ------------------------ | ------------------------------ |
 | **高频日志输出**  | 使用`fmt.Fprint(writer)` | 避免控制台I/O阻塞              |
@@ -116,6 +130,7 @@ func buildSQL(id int) string {
 ---
 
 ### 五、错误处理模式
+
 ```go
 // 错误打印标准化
 if err := process(); err != nil {
@@ -131,3 +146,18 @@ fmt.Errorf("processing failed: %w", err) // 创建嵌套错误
 > **最佳实践**：  
 > 生产环境避免直接`Print`，使用`log`包附加时间戳和日志级别  
 > 格式化字符串优先占位符（`%s`/`%d`）而非类型转换
+
+## 数据类型
+
+- basic types: numbers, strings, booleans
+- aggregate types: arrays, structs
+- reference types: pointers, slices, maps, functions, channels
+- interface types:
+
+### basic types
+
+#### numbers
+
+- int, uint, int8, uint8, int16, uint16, int32, uint32, int64, uint64
+- rune = int32, byte = uint8
+- uintptr，大小不确定的bits指针类型
