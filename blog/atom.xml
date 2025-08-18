@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://terrencegee.github.io/blog</id>
+    <title>Terrence Gee Blog</title>
+    <updated>2024-06-23T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://terrencegee.github.io/blog"/>
+    <subtitle>Terrence Gee Blog</subtitle>
+    <icon>https://terrencegee.github.io/img/tg.svg</icon>
+    <entry>
+        <title type="html"><![CDATA[terrence gee]]></title>
+        <id>https://terrencegee.github.io/blog/hello</id>
+        <link href="https://terrencegee.github.io/blog/hello"/>
+        <updated>2024-06-23T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<!-- Simply add Markdown files (or folders) to the blog directory.]]></summary>
+        <content type="html"><![CDATA[<p>Coming soon ~~~</p>]]></content>
+        <author>
+            <name>Terrence Gee</name>
+            <uri>https://github.com/TerrenceGee</uri>
+        </author>
+        <category label="github" term="github"/>
+        <category label="hello" term="hello"/>
+        <category label="docusaurus" term="docusaurus"/>
+    </entry>
+</feed>
