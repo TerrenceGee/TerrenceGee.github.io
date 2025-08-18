@@ -13,14 +13,14 @@ const config: Config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   // baseUrl: '/',
-  baseUrl: '/blog',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'plain', // Usually your GitHub org/user name.
-  projectName: 'blog', // Usually your repo name.
-  deploymentBranch: 'deployment',
-  trailingSlash: true,
+  organizationName: 'TerrenceGee', // Usually your GitHub org/user name.
+  projectName: 'TerrenceGee.github.io', // Usually your repo name.
+  deploymentBranch: 'main',         // The name of the deployment branch.
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -92,9 +92,9 @@ const config: Config = {
         { type: 'docSidebar', sidebarId: 'workout', label: 'Workout', position: 'right', },
         { type: 'docSidebar', sidebarId: 'plan', label: 'Plan', position: 'right', },
         // blog
-        { to: '/blog/blog', label: 'Blog', position: 'right', },
-        { to: '/blog/resume', label: 'Resume', position: 'right', },
-        { href: 'https://github.com/TerrenceGee', label: 'GitHub', position: 'right', },
+        // { to: '/blog/blog', label: 'Blog', position: 'right', },
+        // { to: '/resume', label: 'Resume', position: 'right', },
+        // { href: 'https://github.com/TerrenceGee', label: 'GitHub', position: 'right', },
       ],
     },
 
@@ -131,8 +131,8 @@ const config: Config = {
         {
           title: 'More',
           items: [
-            { label: 'Blog', to: '/blog/blog', },
-            { label: 'GitHub', href: 'https://github.com/TerrenceGee/blog', },
+            { label: 'Blog', to: '/blog', },
+            { label: 'GitHub', href: 'https://github.com/TerrenceGee', },
           ],
         },
       ],

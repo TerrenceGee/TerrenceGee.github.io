@@ -12,8 +12,8 @@
 
 ### 包和crate
 
-crate有两种形式：binary crate and lib crate。binary crate拥有main函数，并且编译成一个可执行程序，而 lib crate 不是，它相当于一个 library，被其他crate所使用。
-package是这样：它是cargo级别的概念，包含一个toml，可以拥有多个bin crate 和 一个 lib crate；包中的src/{main.rs, lib.rs}，分别是 bin crate 和 lib crate的 root 文件。如果两个文件都存在，则代表这个有一个bin crate和一个lib crate
+crate有两种形式：binary crate and lib crate。binary crate拥有主函数，并且编译成一个可执行程序，而 lib crate 不是，它相当于一个 library，被其他crate所使用。
+package是这样：它是cargo级别的概念，包含一个toml，可以拥有多个bin crate 和 一个 lib crate；包中的`main, lib`，分别是 bin crate 和 lib crate的 root 文件。如果两个文件都存在，则代表这个有一个bin crate和一个lib crate
 
 Rust中控制资源权限的关键字只有一个 pub，它的规则是这样的：
 
