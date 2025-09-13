@@ -1,0 +1,13 @@
+# baseURL = 'https://example.org/'
+# languageCode = 'en-us'
+# title = 'Terrence New Hugo Site'
+# theme = 'ananke'
+
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Terrence New Hugo Site'
+theme = 'ananke'
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
